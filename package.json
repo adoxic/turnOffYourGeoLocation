@@ -1,0 +1,33 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "can tweet??",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "jest": "jest --runInBand",
+    "test": "npm run jest -- --coverage",
+    "test:watch": "npm run jest -- --watchAll",
+    "test:verbose": "npm run test -- --verbose",
+    "start": "node bot.js"
+  },
+  "keywords": [],
+  "author": "Maeve Griffin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "<rootDir>/e2e/setup.js"
+    ]
+  }
+}
