@@ -1,7 +1,7 @@
 {
-  "name": "tweeter",
+  "name": "geogetter",
   "version": "1.0.0",
-  "description": "can tweet??",
+  "description": "Getting Geolocations",
   "main": "server.js",
   "scripts": {
     "lint": "eslint .",
